@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#565656</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#850C0C</color>
+    <color name="navColor">#fdfdfd</color>
+    <color name="headerGray">#B9C5D5</color>
+    <color name="white">#FFFFFF</color>
+    <color name="backgroundAddComment">#EDEDED</color>
+    <color name="gold">#F3C729</color>
+    <color name="signup">#3961FA</color>
+    <color name="messageSent">#6B536F58</color>
+    <color name="messageReceived">#FFFCFC</color>
+
+</resources>

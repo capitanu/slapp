@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/mobile_navigation"
+app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.darthvader11.slapp.ui.feed.FeedFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_feed" />
+
+    <fragment
+        android:id="@+id/navigation_search"
+        android:name="com.darthvader11.slapp.ui.search.SearchFragment"
+        android:label="@string/title_search"
+        tools:layout="@layout/fragment_search" />
+
+    <fragment
+        android:id="@+id/navigation_messages"
+        android:name="com.darthvader11.slapp.ui.messages.MessagesFragment"
+        android:label="@string/title_messages"
+        tools:layout="@layout/fragment_messages" />
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="com.darthvader11.slapp.ui.profile.ProfileFragment"
+        android:label="@string/title_profile"
+        tools:layout="@layout/fragment_profile" />
+
+    <fragment
+        android:id="@+id/navigation_comments"
+        android:name="com.darthvader11.slapp.ui.comment.CommentsFragment"
+        android:label="Comments"
+        tools:layout="@layout/fragment_comments" />
+
+    <fragment
+        android:id="@+id/navigation_newpost"
+        android:name="com.darthvader11.slapp.ui.newpost.NewpostFragment"
+        android:label="Newpost"
+        tools:layout="@layout/fragment_newpost" />
+
+    <fragment
+        android:id="@+id/navigation_post"
+        android:name="com.darthvader11.slapp.ui.post.PostFragment"
+        android:label="Post"
+        tools:layout="@layout/fragment_post" />
+
+
+</navigation>

@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:contentDescription="titleImg"
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="75dp"
+            android:layout_marginTop="5dp"
+            app:srcCompat="@drawable/logo"/>
+
+        <ImageView
+            android:id="@+id/backButton"
+            android:contentDescription="backButton"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentStart="@+id/profileCardView"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="84dp"
+            app:srcCompat="@drawable/back"/>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/profileCardView"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="70dp"
+            android:layout_marginStart="40dp"
+            app:cardCornerRadius="100dp"
+            android:elevation="10dp"
+            app:cardPreventCornerOverlap="false">
+            <ImageView
+                android:contentDescription="profilepic"
+                android:id="@+id/profilePic"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/profpic"/>
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/titleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@id/profileCardView"
+            android:layout_marginStart="70dp"
+            android:layout_marginTop="75dp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textSize="20sp"
+            android:text="Looking for Pop-Rock guitar player"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/profileText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@id/profileCardView"
+            android:layout_marginStart="70dp"
+            android:layout_marginTop="95dp"
+            android:textSize="13sp"
+            android:textColor="@android:color/darker_gray"
+            android:text=" @IkrisBand"
+            android:textStyle="bold" />
+
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/postCardView"
+            android:layout_width="match_parent"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_height="250dp"
+            android:layout_marginTop="150dp"
+            app:cardCornerRadius="10dp"
+            android:elevation="10dp"
+            app:cardPreventCornerOverlap="false">
+            <ImageView
+                android:contentDescription="postpic"
+                android:id="@+id/postPic"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/post"/>
+        </androidx.cardview.widget.CardView>
+
+
+        <Button
+            android:id="@+id/btnShare"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_below="@+id/postCardView"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="231dp"
+            android:layout_marginTop="13dp"
+            android:layout_marginEnd="9dp"
+            android:layout_marginBottom="283dp"
+            android:text="Share"
+            android:textAlignment="center"
+            android:textSize="12sp" />
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/postCardView"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="43dp"
+            android:layout_marginTop="17dp"
+            android:layout_marginEnd="186dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="20dp"
+                android:paddingVertical="3.7dp"
+                android:id="@+id/likesCount"
+                android:text="@string/nr_likes"
+
+                />
+
+            <ImageView
+                android:id="@+id/imgLikes"
+                android:layout_width="27dp"
+                android:layout_height="27dp"
+                android:layout_below="@+id/postCardView"
+                android:layout_marginStart="60dp"
+                android:padding="2dp"
+                app:srcCompat="@drawable/hornsup" />
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/txtDescription"
+            android:layout_width="369dp"
+            android:layout_height="186dp"
+            android:layout_below="@+id/postCardView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="61dp"
+            android:text="@string/post_description"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/txtFixedLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/actionButtons"
+            android:layout_alignStart="@+id/txtDescription"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="21dp"
+            android:layout_marginBottom="10dp"
+            android:text="Location:"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtInputLoc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/actionButtons"
+            android:layout_alignStart="@+id/txtDescription"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="88dp"
+            android:text="@string/location"
+            android:layout_marginBottom="10dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtFixedGenre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/actionButtons"
+            android:layout_alignLeft="@+id/txtInputGenre"
+            android:layout_marginStart="-45dp"
+            android:layout_marginBottom="10dp"
+            android:text="Genre:"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtInputGenre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/actionButtons"
+            android:layout_marginEnd="21dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="88dp"
+            android:text="@string/location"
+            android:layout_marginBottom="10dp"
+            android:textStyle="bold" />
+
+
+
+
+        <LinearLayout
+            android:id="@+id/actionButtons"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="15dp"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/btnLike"
+                android:padding="5dp"
+                android:text="Like"
+                android:layout_weight="1.0"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"/>
+            <Button
+                android:id="@+id/btnComment"
+                android:padding="5dp"
+                android:text="Comment"
+                android:layout_weight="1.0"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"/>
+            <Button
+                android:id="@+id/btnApply"
+                android:padding="5dp"
+                android:text="Apply"
+                android:layout_weight="1.0"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"/>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
